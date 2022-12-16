@@ -50,15 +50,20 @@ void population() {
   rectLXW = appWidth * 1/3;
   rectVXH = appHeight * 1/3;
   //
-  quitWidth = appWidth * 1/4;
-  quitHeight = appHeight * 1/10;
+  quitWidth = appWidth * 1/6;
+  quitHeight = appHeight * 1/12;
   quitX =  centerX - quitWidth * 1/2;
-  quitY = centerY;
+  quitY = centerY + 20;
   //
   quitImageButtonRectX = quitX;
   quitImageButtonRectY = quitY;
   quitImageButtonRectHeight = quitHeight;
   quitImageButtonRectWidth = quitWidth;
+  //
+  titleTextRectX = quitX;
+  titleTextRectY = quitY - 50;
+  titleTextRectWidth = appWidth * 1/4;
+  titleTextRectHeight = appHeight * 1/10;
 }//End Population
 //
 //ENd Population Subprogram

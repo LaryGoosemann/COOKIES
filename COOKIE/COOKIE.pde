@@ -14,6 +14,7 @@ float rectVLX, rectVLY, rectVLW, rectVLH;
 float rectVLLX, rectVLLY, rectVLLW, rectVLLH;
 float rectVLLLX, rectVLLLY, rectVLLLW, rectVLLLH;
 float rectLXX, rectLXY, rectLXW, rectVXH;
+float titleTextRectX, titleTextRectY, titleTextRectWidth, titleTextRectHeight;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
@@ -39,6 +40,7 @@ void draw() {
   if ( OS_On==true && splashScreenStart==false ) splashScreen(); //OS Level MOUSE Click
   if ( splashScreenStart==true) homeScreen();
   if ( splashScreenStart==true) nineRect();
+  if ( splashScreenStart==true) titleText();
   //
 }//End draw
 //

@@ -25,9 +25,15 @@ void spaceBarText() {
 void quitButtonText() {
   fill(red);
   textAlign(CENTER,CENTER);
-  int size = 33;
+  int size = 20;
   textFont (quitFont, size);
   text(quit, quitX, quitY, quitWidth, quitHeight);
-  noFill();
+}
+void titleText() {
+  int shoe = 32;
+  fill(black);
+  textAlign(CENTER,CENTER);
+  textFont (font, shoe);
+  text(spaceBar, titleTextRectX, titleTextRectY, titleTextRectWidth, titleTextRectHeight);
 }
 //End Text Subprogram
