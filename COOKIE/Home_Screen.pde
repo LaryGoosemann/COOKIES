@@ -23,7 +23,11 @@ void homeScreen() { //Exists in VOID DRAW
     rect(quitX, quitY, quitWidth, quitHeight);
     noFill();
   } else {
-    quitButtonText();
+   noStroke();
+   fill(white);
+   rect (quitX, quitY, quitWidth, quitHeight);
+   noFill();
+   quitButtonText();
   }
   //
 }//End homeScreen
@@ -62,5 +66,8 @@ void nineRect() {
   rect(rectVLLX, rectVLLY, rectVLLW, rectVLLH);
   rect(rectVLLLX, rectVLLLY, rectVLLLW, rectVLLLH);
   rect(rectLXX, rectLXY, rectLXW, rectVXH);
+}
+void logoRect() { 
+  rect(logoX, logoY, logoWidth, logoWidth);
 }
 //End Home Screen Subprogram

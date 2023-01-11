@@ -15,6 +15,7 @@ float rectVLLX, rectVLLY, rectVLLW, rectVLLH;
 float rectVLLLX, rectVLLLY, rectVLLLW, rectVLLLH;
 float rectLXX, rectLXY, rectLXW, rectVXH;
 float titleTextRectX, titleTextRectY, titleTextRectWidth, titleTextRectHeight;
+float logoX, logoY, logoWidth, logoHeight;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
@@ -41,6 +42,7 @@ void draw() {
   if ( splashScreenStart==true) homeScreen();
   if ( splashScreenStart==true) nineRect();
   if ( splashScreenStart==true) titleText();
+  if ( splashScreenStart==true) logoRect();
   //
 }//End draw
 //
@@ -53,7 +55,6 @@ void keyPressed() {
   //
   //Key Board Short Cuts
   if ( key==CODED || keyCode==ESC ) exit();
-  if ( key=='Q' || key=='q' ) exit();
   if ( key=='N' || key=='n' ) {
     if ( nightMode==false ) { 
       nightMode = true;
@@ -71,6 +72,8 @@ void keyPressed() {
 void mousePressed() {
   //OS Level MouseClick
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
+  if (splashScreenStart==true) 
+    if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) exit();
 }//End mousePressed
 //
 //End MAIN Program
