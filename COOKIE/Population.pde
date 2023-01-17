@@ -65,10 +65,10 @@ void population() {
   titleTextRectWidth = appWidth * 1/4;
   titleTextRectHeight = appHeight * 1/10;
   //
-  logoX = appWidth * 1/3;
-  logoY = appHeight * 1/2;
+  logoX = appWidth / 2 - appWidth * 1/8;
+  logoY = centerY * 1/3;
   logoWidth = appWidth * 1/4;
-  logoHeight = appHeight * 1/18;
+  logoHeight = appHeight * 1/10;
 }//End Population
 //
 //ENd Population Subprogram

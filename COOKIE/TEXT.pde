@@ -1,8 +1,10 @@
 String spaceBar = "Press the Space Bar to Continue";
 String quit = "Quit";
+String logoText = "Sneedson";
 void textSetup() {
   font = createFont("Yu Gothic UI Bold", 55);
   quitFont = createFont("Stencil", 33);
+  logoFont = createFont("Perpetua", 55);
   //Minimum Expectation is SINGLE FONT
   //
   //Fonts from OS (Operating System)
@@ -35,5 +37,13 @@ void titleText() {
   textAlign(CENTER,CENTER);
   textFont (font, shoe);
   text(spaceBar, titleTextRectX, titleTextRectY, titleTextRectWidth, titleTextRectHeight);
+}
+void logoTiText() 
+{
+  int pierdole = 34;
+  fill(black);
+  textAlign(CENTER,CENTER);
+  textFont (logoFont, pierdole);
+  text(logoText, logoX, logoY, logoWidth, logoHeight);
 }
 //End Text Subprogram

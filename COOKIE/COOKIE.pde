@@ -6,6 +6,7 @@ Boolean nightMode=false; //Bonus #1: populate with sytem clock
 color resetDefaultInk=#000000, white=#FFFFFF, black=#000000, red=#BC0000;
 PFont font;
 PFont quitFont;
+PFont logoFont;
 float rectLX, rectLY, rectLW, rectLH;
 float rectLLX, rectLLY, rectLLW, rectLLH;
 float rectLVX, rectLVY, rectLVW, rectLVH;
@@ -43,6 +44,7 @@ void draw() {
   if ( splashScreenStart==true) nineRect();
   if ( splashScreenStart==true) titleText();
   if ( splashScreenStart==true) logoRect();
+  if ( splashScreenStart==true) logoTiText();
   //
 }//End draw
 //

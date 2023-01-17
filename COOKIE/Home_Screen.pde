@@ -68,6 +68,8 @@ void nineRect() {
   rect(rectLXX, rectLXY, rectLXW, rectVXH);
 }
 void logoRect() { 
-  rect(logoX, logoY, logoWidth, logoWidth);
+  stroke(black);
+  noFill();
+  rect(logoX, logoY, logoWidth, logoHeight);
 }
 //End Home Screen Subprogram
